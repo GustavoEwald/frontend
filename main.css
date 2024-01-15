@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body > header{
+  background-color: rgb(4, 4, 36);
+  padding: 16px 0;
+  color:rgb(206, 206, 206);
+}
+
+header li a{
+  color:rgb(206, 206, 206);
+  text-decoration: none;
+  margin: auto 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header li{
+  display: inline;
+} 
+
+time{
+  font-size: 12px;
+}
+
+.container{
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.articles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.articles img{
+  width: 100%;
+}
+
+article a{
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+article a:hover{
+  text-decoration:underline;
+}
+
+article{
+  width: 30%;
+}
+
+article h3{
+  margin-top: 6px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+section{
+  padding: 16px 0;
+}
+
+section h2,
+.articles article{
+  margin-bottom: 16px;
+}
+
+.articles article{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h2{
+  font-size: 28px ;
+}
+
+#sports{
+  background-color: rgba(152, 255, 157, 0.4);
+}
+
+#sports .articles article a{
+  background-color: rgb(18, 148, 25);
+  color: white;
+}
+
+#economy{
+  background-color: rgba(209, 255, 156, 0.534);
+}
+
+#economy .articles article a{
+  background-color: rgba(255, 166, 0, 0.829);
+  color: white;
+}
+
+#astronomy{
+  background-color: rgba(167, 110, 110, 0.548);
+}
+
+#astronomy .articles article a{
+  background-color: rgba(97, 52, 97, 0.993);
+  color: white;
+}
+
+#cinema{
+  background-color: rgb(191, 178, 247);
+}
+
+#cinema .articles article a{
+  background-color: rgba(68, 69, 114, 0.993);
+  color: white;
+}
