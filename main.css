@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.container{
+  background-color: #a1cbf0;
+  max-width: 600px;
+  width: 85%;
+  margin: 25px auto 25px auto; 
+}
+
+h1{
+  text-align: center;
+}
+
+input, button, #msg{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  padding: 10px 0 10px 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+input{
+  background-color: #abb5be7e;
+  color: black;
+}
+
+button{
+  background-color: #225585;
+  color: white;
+  cursor: pointer;
+}
+
+#msg{
+  color: white;
+}
+
+.msg-positiva{
+  background-color: green;
+}
+
+.msg-negativa{
+  background-color: red;
+}
