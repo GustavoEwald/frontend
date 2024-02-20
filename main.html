@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <form method="get" action=".">
+    <h1>Nome Completo e CPF</h1>
+    <div class="nome-completo container-flex">
+      <div class="nome label-slide">
+        <input id="nome" type="text" name="nome" required>
+        <label class="placeholder" for="nome">Nome</label>
+      </div>
+      <div class="sobrenome label-slide">
+        <input id="sobrenome" type="text" name="sobrenome" required>
+        <label class="placeholder" for="sobrenome">Sobrenome</label>
+      </div>
+      <div class="cpf label-slide">
+        <input id="cpf" type="text" name="cpf" required>
+        <label class="placeholder" for="cpf">CPF</label>
+      </div>
+    </div>
+    
+    <h1>Contato</h1>
+    <div class="container-flex">
+      <div class="email label-slide">
+        <input id="email" type="email" name="email" required>
+        <label class="placeholder" for="email">Email</label>
+      </div>
+      <div class="telefone label-slide">
+        <input id="telefone" type="tel" name="telefone" required>
+        <label class="placeholder" for="telefone" name="telefone">Telefone</label>
+      </div>
+    </div>
+    
+    <h1>Endereço</h1>
+    <div class="container-flex">
+      <div class="logradouro label-slide">
+        <input id="logradouro" type="text" name="logradouro" required>
+        <label class="placeholder" for="logradouro">Logradouro</label>
+      </div>
+      <div class="numero label-slide">
+        <input id="numero" type="text" name="numero" required>
+        <label class="placeholder" for="numero">Nº</label>
+      </div>
+      <div class="bairro label-slide">
+        <input id="bairro" type="text" name="bairro" required>
+        <label class="placeholder" for="bairro">Bairro</label>
+      </div>
+    </div>
+    <div class="container-flex">
+      <div class="cep label-slide">
+        <input id="cep" type="text" name="cep" required >
+        <label class="placeholder" for="cep">CEP</label>
+      </div>
+      <div class="cidade label-slide">
+        <input id="cidade" type="text" name="cidade" required>
+        <label class="placeholder" for="cidade">Cidade</label>
+      </div>
+      <div class="estado label-slide">
+        <input id="estado" type="text" name="estado" required>
+        <label class="placeholder" for="estado">Estado</label>
+      </div>
+    </div> 
+    <button type="submit">Cadastrar</button>
+  </form>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/messages_pt_BR.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

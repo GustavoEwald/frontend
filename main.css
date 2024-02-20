@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  color: #fff;
+}
+
+body{
+  background-color: rgba(80,80,80)
+}
+
+.container-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+h1{
+  margin-top: 16px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form div{
+  margin: 8px 0 8px 0;
+}
+
+form input{
+  height: 38px;
+  padding: 8px 0 8px 16px;
+  width: 100%;
+  font-size: 0.9rem;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.nome{
+  width: 25%;
+}
+.sobrenome{
+  width: 50%;
+}
+.cpf{
+  width: 23%;
+}
+
+.email{
+  width: 68%;
+}
+#email{
+  text-transform: lowercase;
+}
+.telefone{
+  width: 30%;
+}
+
+.logradouro{
+  width: 53%;
+}
+.numero{
+  width: 10%;
+}
+.bairro{
+  width: 35%;
+}
+
+.cidade{
+  width: 58%;
+}
+.estado{
+  width: 15%;
+}
+.cep{
+  width: 25%;
+}
+
+.label-slide{
+  position: relative;
+}
+
+.placeholder{
+  cursor:text;
+}
+
+.label-slide label.placeholder{
+  position: absolute;
+  top: 0.9rem;
+  left: 16px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  transition: 0.2s;
+}
+
+.label-slide input:focus~label.placeholder,
+.label-slide input:valid~label.placeholder{
+  top: 0;
+  background-color: rgba(80,80,80);
+  font-size: 0.7rem;
+}
+
+.error{
+  font-size: 18px;
+  color: gold;
+}
+
+button{
+  height: 40px;
+  width: 180px;
+  border-radius: 25px;
+  border: none;
+  margin: 30px auto;
+  background-color: #fff;
+  color: rgba(80,80,80);
+  font-weight: bold;
+  cursor: pointer
+}
