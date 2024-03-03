@@ -1,0 +1,25 @@
+.text-gold{
+  color: gold;
+}
+
+.border-gold{
+  border: 2px solid gold;
+}
+
+.btn-gold{
+  background-color: gold;
+}
+
+.form-control:focus{
+  border-color: white;
+  outline: 0;
+  box-shadow: none;
+}
+
+#terms{
+  margin-right: 16px;
+}
+
+body{
+  background-repeat: no-repeat;
+}
