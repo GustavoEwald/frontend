@@ -6,8 +6,8 @@ const imagemin = require('gulp-imagemin');
 
 function comprime_imagens(){
   return gulp.src('./source/images/*')
-  .pipe(imagemin())
-  .pipe(gulp.dest('./build/images'))
+        .pipe(imagemin())
+        .pipe(gulp.dest('./build/images'))
 }
 
 function comprime_js(){
@@ -26,10 +26,15 @@ function compila_sass(){
         .pipe(gulp.dest('./build/styles/'));
 }
 
-exports.sass = compila_sass;
-exports.javascript = comprime_js;
-exports.images = comprime_imagens;
+function padrao(callback){
+  compila_sass();
+  comprime_js();
+  comprime_imagens();
+  callback();
+}
 
-exports.watch = function(){
+exports.default = padrao;
+/* exports.watch = function(){
   gulp.watch(['./source/styles/*.scss', './source/scripts/*.js', './source/images/*'], {ignoreInitial: false}, gulp.series(compila_sass, comprime_js, comprime_imagens))
 };
+ */
