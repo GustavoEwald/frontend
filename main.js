@@ -7,8 +7,13 @@ $(document).ready(()=>{
   following = document.getElementById('following');
   link = document.getElementById('link');
 
-  fetch('https://api.github.com/users/GustavoEwald').then((response)=>{
-    return response.json();
+  const usuario = "GustavoEwald";
+
+  fetch(`https://api.github.com/users/${usuario}`)
+  .then(function(response){
+    if (response.ok){
+      return response.json();
+    }
   })
   .then((json)=>{
     avatar.src = json.avatar_url ;
@@ -18,6 +23,9 @@ $(document).ready(()=>{
     followers.innerHTML = json.followers;
     following.innerHTML = json.following;
     link.href = json.html_url;
-
+  })
+  .catch(function(erro){
+    console.log(`Não foi possível localizar o usuário "${usuario}"`);
+    alert(`Tivemos um problema ao tentar localizar o usuário "${usuario}"\nVerifique se o o nome foi digitado corretamente!`)
   })
 })
